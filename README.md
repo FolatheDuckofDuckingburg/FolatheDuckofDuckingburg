@@ -1,16 +1,28 @@
-## Hi there 👋
+# 👋 Hi, I'm Folarera Kassim
 
-<!--
-**FolatheDuckofDuckingburg/FolatheDuckofDuckingburg** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**EdTech & Machine Learning Developer | Junior Computational Neuroscience Researcher**
+---
 
-Here are some ideas to get you started:
+### 👤 About Me
+- 🏷️ **Pronouns:** she/her
+- 🔭 **I’m currently working on:** Developing my EdTech (educational technology) repository **Noggin** and writing research papers on computational neuroscience.
+- 🌱 **I’m currently learning:** TensorFlow.js and Computational Neuroscience
+- 💬 **How to reach me:** Feel free to open a discussion or an issue right here on my public repositories or my email: [folarera.kassim1935@outlook.com](mailto:folarera.kassim1935@outlook.com)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+### 🧠 Current Focus & Research
+* **Noggin:** Building an adaptive, client-side AI tutor framework utilizing TensorFlow.js to dynamically assist special education students.
+* **Computational Neuroscience:** Exploring how neural models can inspire optimal machine learning architectures and adaptive educational software.
+---
+
+### 🛠️ Technical Stack
+* **Languages:** Python, JavaScript (ES6+), HTML5, CSS3
+* **AI & Frontend:** TensorFlow.js, Tailwind CSS, React
+* **Core Concepts:** Neural Networks, Adaptive Algorithmic Design, Brain-Computer Interaction
+
+---
+
+### 📊 Performance Metrics
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=FolatheDuckofDuckingburg&show_icons=true&theme=tokyonight)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=FolatheDuckofDuckingburg&layout=compact&theme=tokyonight)
