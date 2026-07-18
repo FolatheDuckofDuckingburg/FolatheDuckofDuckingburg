@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Folarera Kassim
 
-**EdTech & Machine Learning Developer | Independent Theoretical Neuroscience Researcher | Special Education Mathematics Tutor**
+**EdTech & Machine Learning Developer | Independent Theoretical Neuroscience Researcher | Special Education Mathematics Tutor (Voulenteer)**
 ---
 
 ### 👤 About Me
@@ -8,7 +8,7 @@
 - 🔭 **I’m currently working on:** Developing my EdTech (educational technology) repository **Noggin** and writing research papers on computational neuroscience.
 - 🌱 **I’m currently learning:** TensorFlow.js and Computational Neuroscience
 - 💬 **How to reach me:** Feel free to open a discussion or an issue right here on my public repositories or my email: [folarera.kassim@gmail.com](mailto:folarera.kassim@gmail.com)
-- 🎾**My Hobbies**: Playing chess and tennis.
+- 🎾 **My Hobbies**: Playing chess and tennis.
 
 ---
 
