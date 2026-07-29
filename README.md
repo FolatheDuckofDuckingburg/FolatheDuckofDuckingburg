@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Folarera Kassim
 
-**EdTech & Machine Learning Developer | Independent Theoretical Neuroscience Researcher | Special Education Mathematics Tutor (Voulenteer)**
+**EdTech & Machine Learning Developer | Independent Theoretical Neuroscience Researcher | Special Education Mathematics Tutor (Voulenteer)** | Full Stack Web and App Developer
 ---
 
 ### 👤 About Me
