@@ -1,14 +1,14 @@
 # 👋 Hi, I'm Folarera Kassim
 
-**EdTech & Machine Learning Developer | Independent Theoretical Neuroscience Researcher | Special Education Mathematics Tutor (Voulenteer)** | Full Stack Web and App Developer
+Independent Theoretical Neuroscientist | Full Stack Web and App Developer
 ---
 
 ### 👤 About Me
 - 🏷️ **Pronouns:** she/her
-- 🔭 **I’m currently working on:** Developing my EdTech (educational technology) repository **Noggin** and writing research papers on computational neuroscience.
-- 🌱 **I’m currently learning:** TensorFlow.js and Computational Neuroscience
+- 🔭 **I’m currently working on:** Writing research papers in Theoretical Neuroscience and opening pull requests in [Graphify](https://github.com/Graphify-Labs/graphify)
+- 🌱 **I’m currently learning:** TensorFlow.js and Theoretical Neuroscience
 - 💬 **How to reach me:** Feel free to open a discussion or an issue right here on my public repositories or my email: [folarera.kassim@gmail.com](mailto:folarera.kassim@gmail.com)
-- 🎾 **My Hobbies**: Playing chess and tennis.
+
 
 ---
 
@@ -18,8 +18,8 @@
 ---
 
 ### 🛠️ Technical Stack
-* **Languages:** Python, JavaScript (ES6+), HTML5, CSS3
-* **AI & Frontend:** TensorFlow.js, Tailwind CSS, React, InvokeLLM
+* **Languages:** Python, JavaScript (ES6+), JupyterNotebook, CSS3, Python
+* **AI & Frontend:** TensorFlow.js, Tailwind CSS, React
 * **Core Concepts:** Neural Networks, Adaptive Algorithmic Design, Brain-Computer Interaction
 
 ---
