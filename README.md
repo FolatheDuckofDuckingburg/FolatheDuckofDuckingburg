@@ -1,28 +1,39 @@
-# 👋 Hi, I'm Folarera Kassim
+# Hi, I'm Folarera 👋
 
-**Student researcher in theoretical neuroscience, brain-computer interfaces, and theoretical physics.**
----
-
-### 👤 About Me
-- 🏷️ **Pronouns:** she/her
-- 💬 **How to reach me:** Open a discussion or issue on any of my public repositories, or email me at [folarera.kassim@gmail.com](mailto:folarera.kassim@gmail.com)
+Computer scientist working on research in neuroscience and physics.
 
 ---
 
-### 🧠 Current Focus & Research
-- **Noggin:** Building an adaptive, AI-powered educational website for special education students.
-- **Neuroscience:** Investigating the Write-Back Gap — trial-level feedback timing in closed-loop BCI and neurofeedback systems.
-- **Physics:** Studying the continuum limit of discrete quantum gravity, particularly causal set theory.
+### About
+
+- 🏷️ Pronouns: she/her
+- 📍 Lagos, Nigeria / South Carolina, USA
+- 💬 Reach me: [folarera.kassim@gmail.com](mailto:folarera.kassim@gmail.com)
 
 ---
 
-### 🛠️ Technical Stack
-- **Languages:** Python, JavaScript (ES6+), Jupyter Notebook, CSS3
-- **AI & Frontend:** TensorFlow.js, Tailwind CSS, React
-- **Core Concepts:** Neural Networks, Adaptive Algorithmic Design, Brain-Computer Interfaces, Causal Set Theory, Quantum Gravity
+### What I'm Working On
+
+**bigP3BCI analysis** — Extracting trial-level `(L, Y)` data from a public P300 BCI dataset (PhysioNet) to test whether feedback timing predicts selection accuracy in adaptive speller sessions. Found a channel-labeling discrepancy in the dataset documentation for Study M.
+
+**Neural Feedback Optimization Theory (NFOT)** — A framework for studying feedback timing in closed-loop systems. Preprint (v3): [[Zenodo]
+](https://zenodo.org/records/22974608)
+
+**Noggimigo** — An open-source Socratic tutoring engine in Python for special education.
+
+**Causal set theory** — Reading the literature and building toward a numerical study of the 3D phase transition.
 
 ---
 
-### 📄 Publications & Links
-- [ORCID](https://orcid.org/0009-0007-2148-5675)
-- [Noggin-Labs](https://github.com/Noggin-Labs) — my research organization
+### Skills
+
+- **Languages:** Python (NumPy, pandas, SciPy, Matplotlib, MNE), LaTeX, JavaScript, HTML/CSS
+- **Tools:** Git, GitHub, Jupyter, Colab, MNE-Python, BIDS/EDF formats
+- **Currently learning:** single-variable calculus → vector calculus → electrodynamics
+
+---
+
+### Links
+
+- ORCID: [0009-0007-2148-5675](https://orcid.org/0009-0007-2148-5675)
+- Research Org: [Noggin-Labs](https://github.com/Noggin-Labs)
