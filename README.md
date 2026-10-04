@@ -1,8 +1,8 @@
 # 🧠 Folarera Ayobami Kassim
 
-**Independent Researcher · Computational Neuroscience · BCI · Physics**
+**Independent Researcher · Computational Neuroscience · BCI · Theoretical Physics**
 
-> Building, testing, and questioning ideas at the intersection of **brains, machines, and fundamental physics.**
+> Building, testing, and questioning ideas at the intersection of **brains, machines, and theoretical physics.**
 
 📍 **Lagos, Nigeria / South Carolina, USA**
 🏷️ **she/her**
