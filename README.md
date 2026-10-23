@@ -1,154 +1,187 @@
 # 🧠 Folarera Ayobami Kassim
 
-**Independent Researcher · Computational Neuroscience · Brain–Computer Interfaces · Scientific Computing**
+### Independent Researcher · Computational Neuroscience · Scientific Computing
 
-> Building, testing, and questioning ideas at the intersection of brains, machines, and mathematical models.
+Exploring how brains learn, how feedback shapes closed-loop systems, and how mathematical models can be tested against evidence.
 
-📍 **Lagos, Nigeria / South Carolina, USA**
-🏷️ **Pronouns:** she/her
-📫 **Email:** [folarera.kassim@gmail.com](mailto\:folarera.kassim@gmail.com)
+📍 Lagos, Nigeria / South Carolina, USA · She/her
+📫 [Email](mailto\:folarera.kassim@gmail.com) · [GitHub](https://github.com/FolatheDuckofDuckingburg) · [ORCID](https://orcid.org/0009-0007-2148-5675)
 
----
-
-## 🔬 CURRENT RESEARCH
-
-### ⚡ Neural Feedback Optimization Theory (NFOT)
-
-**The Write-Back Gap as a Trial-Level Temporal Variable in Closed-Loop Learning Systems**
-
-NFOT investigates whether the timing and trial-to-trial variability of completed feedback are associated with subsequent performance in closed-loop systems.
-
-The current analysis examines trial-level data from a public P300 brain–computer interface dataset, treating the Write-Back Gap (L) as the interval between a defined starting event and completed feedback.
-
-**Latest analysis — v5**
-
-- 📊 **444 trials** across 15 participants from the public bigP3BCI dataset
-- 🎯 **82.9%** overall selection accuracy
-- 📉 Negative within-participant association between the Write-Back Gap and selection accuracy
-
-- 🔁 Negative estimated association in all 15 leave-one-subject-out evaluations
-- 📈 Adding the trial-level variability measure improved the reported cross-validated AUC from **0.656 to 0.731**
-
-**Current scientific question:** Does trial-to-trial variability in feedback timing provide predictive information beyond mean timing?
-
-**Important limitation:** These are observational findings. They do not establish that manipulating feedback timing causes improved or reduced performance. Prospective testing with controlled timing manipulations is needed.
-
-📄 **Preprint:** [NFOT v5 — Zenodo](https://zenodo.org/records/23140358)
-💻 **Repository:** [Noggin-Labs/Neural-Feedback-Optimization-Theory](https://github.com/Noggin-Labs/Neural-Feedback-Optimization-Theory)
-
-> **Hypothesis → Prediction → Measurement → Replication → Falsification**
+**Research interests:** Neural feedback · Brain–computer interfaces · Numerical methods · Adaptive educational AI · Mathematical physics
 
 ---
 
-### 🧠 bigP3BCI Analysis
+## 🧪 Research at a Glance
 
-**Trial-level feedback timing and BCI selection accuracy**
-
-Analyzing publicly available P300 BCI data from PhysioNet to investigate relationships between feedback timing and selection outcomes.
-
-**Methods and progress**
-
-- 🧩 Reverse-engineered the event and channel encodings used in Study M.
-- 🎯 Decoded `SelectedTarget` using the cell-index mapping.
-- 🔎 Distinguished the selected cell from the actual target represented by `CurrentTarget`.
-- 📊 Built a trial-level dataset linking feedback timing with selection accuracy.
-- 🔁 Evaluated within-participant associations and leave-one-subject-out generalization.
-- 🧪 Identified prospective controlled-delay experiments as a necessary next step.
-
-**Goal:** Develop a reproducible, falsifiable analysis of temporal variables in closed-loop BCI performance.
+| Project            | Focus                                    | Current stage                                      |
+| ------------------ | ---------------------------------------- | -------------------------------------------------- |
+| ⚡ NFOT             | Feedback timing and closed-loop learning | Observational analysis; prospective testing needed |
+| 🧠 bigP3BCI        | Trial-level P300 BCI analysis            | Public-dataset analysis                            |
+| 🌊 Cavity-Flow-Lab | Incompressible Navier–Stokes simulation  | Numerical validation                               |
+| 🤖 Noggimigo       | Socratic tutoring systems                | Research and development                           |
+| 🕸️ Graphify       | Programming-language analysis            | Open-source contribution                           |
 
 ---
 
-### 🤖 Noggimigo
+## ⚡ NFOT — Neural Feedback Optimization Theory
 
-**An open-source Python-based Socratic tutoring engine**
+**Can the variability of feedback timing help explain performance in closed-loop learning systems?**
 
-Noggimigo explores how educational software can support structured reasoning by adapting to a learner's expressed reasoning and misconceptions rather than simply supplying answers.
+NFOT investigates the relationship between the timing of completed feedback and subsequent performance. Its central variable, the **Write-Back Gap** ($L$), is the interval between a defined starting event and the completion of feedback.
 
-**Core components**
+### Preliminary findings · v5
 
-- 🧠 Local intent classification
-- 🔎 Structured misconception taxonomy
-- 🧩 Learner-accommodation adapters
-- ♿ Design considerations for ADHD, autism, and dyslexia
-- 🐍 Python-based architecture
+Analysis of public bigP3BCI data produced the following reported results:
 
-**Goal:** Explore adaptive tutoring systems that respond to how a learner approaches a problem, not only whether their answer is correct.
+- **444 trials** across 15 participants
+- **82.9%** overall selection accuracy in the analyzed sample
+- Negative estimated within-participant association between the Write-Back Gap and selection accuracy
+- Negative estimated associations across all 15 leave-one-subject-out evaluations
+- Reported cross-validated AUC increased from **0.656 to 0.731** when a trial-level variability measure was added
+
+### What these results mean
+
+These findings are observational. They do not establish that manipulating feedback timing causes performance changes, and predictive improvements require further checks for leakage, model selection, uncertainty, and alternative explanations.
+
+**Next experiment:** Compare controlled feedback-delay distributions with different variability but matched mean delay, then test whether variability adds predictive information beyond mean timing.
+
+🔬 **Research pipeline:** Operational definitions → Reproducible analysis → Falsifiable predictions → Controlled experiment → Independent replication
+
+📄 [Preprint — Zenodo](https://zenodo.org/records/23140358)
+💻 [NFOT repository](https://github.com/Noggin-Labs/Neural-Feedback-Optimization-Theory)
 
 ---
 
-### 🌊 Numerical Fluid Dynamics
+## 🧠 bigP3BCI — Trial-Level BCI Analysis
 
-**Two-dimensional incompressible Navier–Stokes solver**
+**Python · P300 BCI · PhysioNet · Statistical modeling**
 
-Developing a lid-driven cavity solver for incompressible flow at Reynolds number (Re=100).
+Investigating how trial-level feedback timing relates to selection outcomes in a publicly available brain–computer interface dataset.
 
-**Methods**
+### Implementation and analysis
+
+- Reverse-engineered Study M event and channel encodings.
+- Implemented the cell-index mapping for `SelectedTarget`.
+- Examined how selected-cell events differ from target information.
+- Built a trial-level dataset linking feedback intervals to selection outcomes.
+- Evaluated within-participant associations and leave-one-subject-out generalization.
+- Identified controlled-delay experiments as the next step toward testing causal hypotheses.
+
+**Research question:** Does feedback-timing variability explain or predict performance beyond average timing?
+
+**Important distinction:** Predictive association in an existing dataset is not proof of a causal mechanism.
+
+---
+
+## 🌊 Cavity-Flow-Lab — Numerical Fluid Dynamics
+
+**Python · NumPy · Numerical PDEs · Scientific computing**
+
+A two-dimensional incompressible Navier–Stokes solver for the lid-driven cavity problem at (Re=100).
+
+### Numerical methods
 
 - MAC staggered-grid discretization
 - Backward-Euler treatment of diffusion
 - Projection method for incompressibility
-- Grid-refinement studies
-- Comparison with established Ghia et al. benchmark profiles
+- Grid refinement and benchmark comparisons
+- Comparison against reference profiles from Ghia et al.
 
-**Goal:** Evaluate numerical accuracy, convergence, and physical consistency through reproducible tests rather than relying on a single error metric.
+### Reported numerical checks
 
----
+| Grid           | Velocity (u) RMSE | Velocity (v) RMSE |
+| -------------- | ----------------: | ----------------: |
+| (32 x 32) |           0.01122 |           0.00862 |
+| (64 x 64) |           0.00545 |           0.00339 |
 
-### ⚛️ Causal Set Theory
+The reported errors decrease with refinement. These values are useful numerical checks, not by themselves proof of convergence or full physical correctness. Further validation includes boundary conditions, pressure–velocity consistency, and systematic refinement studies.
 
-Exploring the emergence of spacetime from discrete causal structure.
-
-**Current focus:** Understanding the literature on phase transitions in three-dimensional causal set models and identifying a tractable direction for future numerical investigation.
-
-**Mathematical learning path:**
-
-`Single-variable calculus → Multivariable calculus → Vector calculus → Electrodynamics`
+💻 [Cavity-Flow-Lab on GitHub](https://github.com/FolatheDuckofDuckingburg/Cavity-Flow-Lab)
 
 ---
 
-## 🛠️ TECHNICAL STACK
+## 🕸️ Graphify — Open-Source Contribution
 
-### 🐍 Programming
+**Python · TypeScript · Abstract syntax trees · Code analysis**
 
-`Python` · `JavaScript` · `TypeScript` · `HTML` · `CSS` · `LaTeX`
+Contributing to Graphify, an open-source knowledge-graph tool for AI-assisted codebase exploration.
 
-### 🧮 Scientific Computing
+My work in this area includes programming-language structure and AST-based analysis, with an interest in how code relationships can be extracted without introducing false or ambiguous inferences.
 
-`NumPy` · `pandas` · `SciPy` · `Matplotlib` · `Jupyter`
+[**v0.9.32:**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.32) Fix: Ruby mixins declared with compact/nested syntax now resolve, and a qualified external mixin can no longer fabricate a phantom hub. `module Foo::Bar` and `module Foo; module Bar` canonicalize to the same label; `extend ActiveSupport::Concern` no longer binds to a local module named `Concern`; a genuine in-corpus `include Foo::Concern` still resolves.
 
-### 🧠 Neuroscience and Data
+[**v0.9.92**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.92)**:** Fix: Ruby mixins declared with compact/nested syntax now resolve, and a qualified external mixin can no longer fabricate a phantom hub. `module Foo::Bar` and `module Foo; module Bar` canonicalize to the same label; `extend ActiveSupport::Concern` no longer binds to a local module named `Concern`; a genuine in-corpus `include Foo::Concern` still resolves.
 
-`MNE-Python` · `BIDS` · `EDF` · `P300 BCI` · `PhysioNet`
 
-### 💻 Research Workflow
 
-`Git` · `GitHub` · `Google Colab` · `Reproducible Analysis` · `Statistical Modeling`
+## 🤖 Noggimigo — Socratic Tutoring Engine
+
+**Python · Educational AI · Adaptive learning**
+
+An open-source tutoring-engine project exploring how educational software can respond to a learner's reasoning and misconceptions instead of simply returning answers.
+
+### Planned and developing components
+
+- Local intent classification
+- Structured misconception taxonomy
+- Learner-accommodation adapters
+- Accessibility considerations for learners with different cognitive and learning needs
+- Python-based architecture
+
+**Goal:** Explore tutoring systems that encourage independent reasoning and adapt their questions and explanations to the learner's approach.
+
+[https://github.com/Noggin-Labs/Noggin](https://github.com/Noggin-Labs/Noggin)
+[https://github.com/Noggin-Labs/noggimigo](https://github.com/Noggin-Labs/noggimigo)
 
 ---
 
-## 🌱 BUILDING — NOGGIN-LABS
+## ⚛️ Foundations of Spacetime
 
-**An independent research and development space** for projects spanning:
+**Causal set theory · Discrete models · Mathematical physics**
 
-- 🧠 Computational neuroscience and closed-loop neural systems
-- 🤖 AI and adaptive educational technology
-- 💻 Scientific computing and numerical simulation
-- 🔬 Reproducible, open-source research
+Exploring approaches to spacetime based on discrete causal structure, with particular interest in phase transitions in three-dimensional causal set models.
+
+Current work focuses on understanding existing literature, identifying assumptions, and finding a tractable direction for numerical investigation.
+
+This is an evolving research interest, not a claim to have established a new physical theory.
 
 ---
 
-## 🔗 RESEARCH LINKS
+## 🛠️ Technical Stack
 
+**Programming:** `Python` · `JavaScript` · `TypeScript` · `HTML` · `CSS` · `LaTeX`
+
+**Scientific computing:** `NumPy` · `pandas` · `SciPy` · `Matplotlib` · `Jupyter`
+
+**Neuroscience and data:** `MNE-Python` · `BIDS` · `EDF` · `P300 BCI` · `PhysioNet`
+
+**Development and workflow:** `Git` · `GitHub` · `Google Colab` · `AST Analysis` · `Statistical Modeling`
+
+---
+
+## 🌱 Noggin-Labs
+
+**Independent research and development**
+
+Noggin-Labs brings together projects spanning:
+
+- Computational neuroscience and closed-loop neural systems
+- Adaptive educational technology
+- Scientific computing and numerical simulation
+- Reproducible, open-source research
+
+[Noggin-Labs on GitHub](https://github.com/Noggin-Labs)
+
+---
+
+## 📬 Research Links
+
+- **GitHub:** [FolatheDuckofDuckingburg](https://github.com/FolatheDuckofDuckingburg)
+- **Research organization:** [Noggin-Labs](https://github.com/Noggin-Labs)
 - **ORCID:** [0009-0007-2148-5675](https://orcid.org/0009-0007-2148-5675)
-- **GitHub Organization:** [Noggin-Labs](https://github.com/Noggin-Labs)
+- **NFOT preprint:** [Zenodo](https://zenodo.org/records/23140358)
 - **Contact:** [folarera.kassim@gmail.com](mailto\:folarera.kassim@gmail.com)
 
 ---
 
-## 🧪 RESEARCH PHILOSOPHY
-
-*"What's philosophy? I hate philosophy."*
-
-**Measure it. Test it. Question it. Make the evidence reproducible.**
-
+##
