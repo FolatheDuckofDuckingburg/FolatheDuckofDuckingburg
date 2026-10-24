@@ -1,13 +1,31 @@
-# 🧠 Folarera Ayobami Kassim
+# **Folarera Kassim**
 
 ### Independent Researcher · Computational Neuroscience · Scientific Computing
+
+<p align="center">
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  </a>
+  <a href="https://nodejs.org/">
+    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  </a>
+  <a href="https://nextjs.org/">
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  </a>
+  <a href="https://github.com/AXIOM-Neuro/AXIOM">
+    <img src="https://img.shields.io/badge/AXIOM-Computational_Neuroscience-6A5ACD?style=for-the-badge" alt="AXIOM Computational Neuroscience" />
+  </a>
+</p>
 
 Exploring how brains learn, how feedback shapes closed-loop systems, and how mathematical models can be tested against evidence.
 
 📍 Lagos, Nigeria / South Carolina, USA · She/her
 📫 [Email](mailto\:folarera.kassim@gmail.com) · [GitHub](https://github.com/FolatheDuckofDuckingburg) · [ORCID](https://orcid.org/0009-0007-2148-5675)
 
-**Research interests:** Neural feedback · Brain–computer interfaces · Numerical methods · Adaptive educational AI · Mathematical physics
+**Research interests:** Computational Neuroscience · Brain–computer interfaces · Numerical methods · Educational Technology · Theoretical Physics
 
 ---
 
@@ -23,15 +41,15 @@ Exploring how brains learn, how feedback shapes closed-loop systems, and how mat
 
 ---
 
-## ⚡ NFOT — Neural Feedback Optimization Theory
+## ⚡ Neural Feedback Optimization Theory (NFOT)
 
 **Can the variability of feedback timing help explain performance in closed-loop learning systems?**
 
-NFOT investigates the relationship between the timing of completed feedback and subsequent performance. Its central variable, the **Write-Back Gap** ($L$), is the interval between a defined starting event and the completion of feedback.
+NFOT investigates how the timing of completed feedback relates to subsequent performance. Its central variable, the **Write-Back Gap** ($L$), is the interval between a defined starting event and the completion of feedback.
 
 ### Preliminary findings · v5
 
-Analysis of a publicly available P300 BCI dataset produced the following reported results:
+Analysis of public bigP3BCI data produced the following reported results:
 
 - **444 trials** across 15 participants
 - **82.9%** overall selection accuracy in the analyzed sample
@@ -41,7 +59,7 @@ Analysis of a publicly available P300 BCI dataset produced the following reporte
 
 ### What these results mean
 
-These findings are observational. They do not establish that manipulating feedback timing causes performance changes, and predictive improvements require further checks for leakage, model selection, uncertainty, and alternative explanations.
+These findings are observational. They do not establish that manipulating feedback timing changes performance, and predictive improvements require further checks for leakage, model selection, uncertainty, and alternative explanations.
 
 **Next experiment:** Compare controlled feedback-delay distributions with different variability but matched mean delay, then test whether variability adds predictive information beyond mean timing.
 
@@ -76,6 +94,7 @@ AXIOM is under active development. Current capabilities are an initial foundatio
 💻 **[AXIOM repository](https://github.com/AXIOM-Neuro/AXIOM)** · 📘 [Project README](https://github.com/AXIOM-Neuro/AXIOM#readme)
 
 ---
+
 
 ## 🌊 Cavity-Flow-Lab — Numerical Fluid Dynamics
 
@@ -114,8 +133,7 @@ My work in this area includes programming-language structure and AST-based analy
 
 [**v0.9.32:**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.32) Fix: Ruby mixins declared with compact/nested syntax now resolve, and a qualified external mixin can no longer fabricate a phantom hub. `module Foo::Bar` and `module Foo; module Bar` canonicalize to the same label; `extend ActiveSupport::Concern` no longer binds to a local module named `Concern`; a genuine in-corpus `include Foo::Concern` still resolves.
 
-[**v0.9.92:**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.92) Fix: TypeScript `this.field` is typed from an assignment in any method, including `static` methods and accessors.
-
+[**v0.9.92**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.92)**:** Fix: TypeScript `this.field` is typed from an assignment in any method, including `static` and accessors.
 
 
 ## 🤖 Noggimigo — Socratic Tutoring Engine
@@ -159,7 +177,9 @@ This is an evolving research interest, not a claim to have established a new phy
 
 **Neuroscience and data:** `MNE-Python` · `BIDS` · `EDF` · `P300 BCI` · `PhysioNet`
 
-**Neuroscience software development:** `AXIOM` · `Python DSLs` · `LIF Models` · `Numerical ODE Solvers` · `pytest`\n\n**Development and workflow:** `Git` · `GitHub` · `Visual Studio Code` · `Google Colab` · `AST Analysis` · `Statistical Modeling`
+**Neuroscience software development:** `AXIOM` · `Python DSLs` · `LIF Models` · `Numerical ODE Solvers` · `pytest`
+
+**Development and workflow:** `Git` · `GitHub` · `Visual Studio Code` · `Google Colab` · `AST Analysis` · `Statistical Modeling`
 
 ---
 
@@ -170,7 +190,7 @@ This is an evolving research interest, not a claim to have established a new phy
 Noggin-Labs brings together projects spanning:
 
 - Computational neuroscience and closed-loop neural systems
-- Adaptive educational technology
+- Adaptive educational technology (EdTech)
 - Scientific computing and numerical simulation
 - Reproducible, open-source research
 
