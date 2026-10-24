@@ -16,7 +16,6 @@ Exploring how brains learn, how feedback shapes closed-loop systems, and how mat
 | Project            | Focus                                    | Current stage                                      |
 | ------------------ | ---------------------------------------- | -------------------------------------------------- |
 | ⚡ NFOT             | Feedback timing and closed-loop learning | Observational analysis; prospective testing needed |
-| 🧠 bigP3BCI        | Trial-level P300 BCI analysis            | Public-dataset analysis                            |
 | 🌊 Cavity-Flow-Lab | Incompressible Navier–Stokes simulation  | Numerical validation                               |
 | 🧠 AXIOM           | Python-powered language for computational neuroscience | Early development; LIF simulation and numerical solvers |
 | 🤖 Noggimigo       | Socratic tutoring systems                | Research and development                           |
@@ -32,7 +31,7 @@ NFOT investigates the relationship between the timing of completed feedback and 
 
 ### Preliminary findings · v5
 
-Analysis of public bigP3BCI data produced the following reported results:
+Analysis of a publicly available P300 BCI dataset produced the following reported results:
 
 - **444 trials** across 15 participants
 - **82.9%** overall selection accuracy in the analyzed sample
@@ -78,27 +77,6 @@ AXIOM is under active development. Current capabilities are an initial foundatio
 
 ---
 
-## 🧠 bigP3BCI — Trial-Level BCI Analysis
-
-**Python · P300 BCI · PhysioNet · Statistical modeling**
-
-Investigating how trial-level feedback timing relates to selection outcomes in a publicly available brain–computer interface dataset.
-
-### Implementation and analysis
-
-- Reverse-engineered Study M event and channel encodings.
-- Implemented the cell-index mapping for `SelectedTarget`.
-- Examined how selected-cell events differ from target information.
-- Built a trial-level dataset linking feedback intervals to selection outcomes.
-- Evaluated within-participant associations and leave-one-subject-out generalization.
-- Identified controlled-delay experiments as the next step toward testing causal hypotheses.
-
-**Research question:** Does feedback-timing variability explain or predict performance beyond average timing?
-
-**Important distinction:** Predictive association in an existing dataset is not proof of a causal mechanism.
-
----
-
 ## 🌊 Cavity-Flow-Lab — Numerical Fluid Dynamics
 
 **Python · NumPy · Numerical PDEs · Scientific computing**
@@ -136,7 +114,7 @@ My work in this area includes programming-language structure and AST-based analy
 
 [**v0.9.32:**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.32) Fix: Ruby mixins declared with compact/nested syntax now resolve, and a qualified external mixin can no longer fabricate a phantom hub. `module Foo::Bar` and `module Foo; module Bar` canonicalize to the same label; `extend ActiveSupport::Concern` no longer binds to a local module named `Concern`; a genuine in-corpus `include Foo::Concern` still resolves.
 
-[**v0.9.92**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.92)**:** Fix: Ruby mixins declared with compact/nested syntax now resolve, and a qualified external mixin can no longer fabricate a phantom hub. `module Foo::Bar` and `module Foo; module Bar` canonicalize to the same label; `extend ActiveSupport::Concern` no longer binds to a local module named `Concern`; a genuine in-corpus `include Foo::Concern` still resolves.
+[**v0.9.92:**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.92) Fix: TypeScript `this.field` is typed from an assignment in any method, including `static` methods and accessors.
 
 
 
