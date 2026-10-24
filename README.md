@@ -18,6 +18,7 @@ Exploring how brains learn, how feedback shapes closed-loop systems, and how mat
 | ⚡ NFOT             | Feedback timing and closed-loop learning | Observational analysis; prospective testing needed |
 | 🧠 bigP3BCI        | Trial-level P300 BCI analysis            | Public-dataset analysis                            |
 | 🌊 Cavity-Flow-Lab | Incompressible Navier–Stokes simulation  | Numerical validation                               |
+| 🧠 AXIOM           | Python-powered language for computational neuroscience | Early development; LIF simulation and numerical solvers |
 | 🤖 Noggimigo       | Socratic tutoring systems                | Research and development                           |
 | 🕸️ Graphify       | Programming-language analysis            | Open-source contribution                           |
 
@@ -49,6 +50,31 @@ These findings are observational. They do not establish that manipulating feedba
 
 📄 [Preprint — Zenodo](https://zenodo.org/records/23140358)
 💻 [NFOT repository](https://github.com/Noggin-Labs/Neural-Feedback-Optimization-Theory)
+
+---
+
+## 🧠 AXIOM — A Programming Language for Computational Neuroscience
+
+**Python · Domain-specific language (DSL) · Neuron simulation · Numerical methods**
+
+Building AXIOM, a Python-powered scientific programming language designed to make computational neuroscience models more readable, explicit, and reproducible.
+
+The project aims to give neuroscience workflows a clear language for defining neuron models, stimuli, simulation settings, and recorded outputs while retaining access to Python.
+
+### Current implementation
+
+- Readable `.ax` domain-specific language with an interpreter and command-line interface.
+- Current-driven Leaky Integrate-and-Fire (LIF) neuron simulation.
+- Explicit Forward Euler, RK2 (Midpoint), and RK4 numerical solvers.
+- Unit-aware quantities for common neuroscience and simulation units.
+- Stimulus abstractions, simulation recording, and CSV export.
+- Tests and runnable examples to support development and validation.
+
+### Development approach
+
+AXIOM is under active development. Current capabilities are an initial foundation, not a claim that the language covers all of computational neuroscience. Priorities include readable syntax, tested numerical behavior, clear documentation, and reproducible examples.
+
+💻 **[AXIOM repository](https://github.com/AXIOM-Neuro/AXIOM)** · 📘 [Project README](https://github.com/AXIOM-Neuro/AXIOM#readme)
 
 ---
 
@@ -155,7 +181,7 @@ This is an evolving research interest, not a claim to have established a new phy
 
 **Neuroscience and data:** `MNE-Python` · `BIDS` · `EDF` · `P300 BCI` · `PhysioNet`
 
-**Development and workflow:** `Git` · `GitHub` · `Google Colab` · `AST Analysis` · `Statistical Modeling`
+**Neuroscience software development:** `AXIOM` · `Python DSLs` · `LIF Models` · `Numerical ODE Solvers` · `pytest`\n\n**Development and workflow:** `Git` · `GitHub` · `Visual Studio Code` · `Google Colab` · `AST Analysis` · `Statistical Modeling`
 
 ---
 
@@ -178,6 +204,7 @@ Noggin-Labs brings together projects spanning:
 
 - **GitHub:** [FolatheDuckofDuckingburg](https://github.com/FolatheDuckofDuckingburg)
 - **Research organization:** [Noggin-Labs](https://github.com/Noggin-Labs)
+- **AXIOM:** [AXIOM-Neuro/AXIOM](https://github.com/AXIOM-Neuro/AXIOM)
 - **ORCID:** [0009-0007-2148-5675](https://orcid.org/0009-0007-2148-5675)
 - **NFOT preprint:** [Zenodo](https://zenodo.org/records/23140358)
 - **Contact:** [folarera.kassim@gmail.com](mailto\:folarera.kassim@gmail.com)
