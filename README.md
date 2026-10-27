@@ -27,6 +27,10 @@ Exploring how brains learn, how feedback shapes closed-loop systems, and how mat
 
 **Research interests:** Computational Neuroscience · Brain–computer interfaces · Numerical methods · Educational Technology · Theoretical Physics
 
+<p align="right">
+  <img src="https://komarev.com/ghpvc/?username=folatheduckofduckingburg&label=Profile%20views&color=0eb493&style=flat" alt="folatheduckofduckingburg" />
+</p>
+
 ---
 
 ## 🧪 Research at a Glance
