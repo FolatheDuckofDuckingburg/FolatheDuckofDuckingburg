@@ -25,7 +25,10 @@ Exploring how brains learn, how feedback shapes closed-loop systems, and how mat
 📍 Lagos, Nigeria / South Carolina, USA · She/her
 📫 [Email](mailto\:folarera.kassim@gmail.com) · [GitHub](https://github.com/FolatheDuckofDuckingburg) · [ORCID](https://orcid.org/0009-0007-2148-5675)
 
-**Research interests:** Computational Neuroscience · Brain–computer interfaces · Numerical methods · Educational Technology · Theoretical Physics
+**Research Interests:**
+Computational Neuroscience · Brain–computer interfaces · Numerical methods · Educational Technology · Theoretical Physics
+
+
 ---
 
 ## 🧪 Research at a Glance
