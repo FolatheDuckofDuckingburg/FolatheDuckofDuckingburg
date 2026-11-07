@@ -1,214 +1,276 @@
-# **Folarera Kassim**
+# Folarera Kassim
 
-### Independent Researcher · Computational Neuroscience · Scientific Computing
+### Independent Researcher | Computational Neuroscience · Neural Engineering · Theoretical Physics
 
 <p align="center">
-  <a href="https://www.python.org/">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  </a>
-  <a href="https://www.typescriptlang.org/">
-    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  </a>
-  <a href="https://nodejs.org/">
-    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  </a>
-  <a href="https://nextjs.org/">
-    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  </a>
-  <a href="https://github.com/AXIOM-Neuro/AXIOM">
-    <img src="https://img.shields.io/badge/AXIOM-Computational_Neuroscience-6A5ACD?style=for-the-badge" alt="AXIOM Computational Neuroscience" />
-  </a>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Scientific_Computing-4B8BBE?style=for-the-badge" alt="Scientific Computing" />
+  <img src="https://img.shields.io/badge/Neuroscience-6A5ACD?style=for-the-badge" alt="Neuroscience" />
 </p>
 
-Exploring how brains learn, how feedback shapes closed-loop systems, and how mathematical models can be tested against evidence.
+I work at the intersection of neuroscience, mathematics, physics, computation, and intelligent systems.
+
+My interests include computational models of neural systems, temporal credit assignment, brain–computer interfaces, numerical simulation, causal set theory, string theory, and educational AI.
+
+I build scientific software, investigate research questions, and develop computational methods with an emphasis on reproducibility, explicit assumptions, and testable results.
 
 📍 Lagos, Nigeria / South Carolina, USA · She/her
-📫 [Email](mailto\:folarera.kassim@gmail.com) · [GitHub](https://github.com/FolatheDuckofDuckingburg) · [ORCID](https://orcid.org/0009-0007-2148-5675)
 
-**Research Interests:**
-Computational Neuroscience · Brain–computer interfaces · Numerical methods · Educational Technology · Theoretical Physics
-
+[GitHub](https://github.com/FolatheDuckofDuckingburg) · [ORCID](https://orcid.org/0009-0007-2148-5675) · [Email](mailto:folarera.kassim@gmail.com)
 
 ---
 
-## 🧪 Research at a Glance
+## Research at a Glance
 
-| Project            | Focus                                    | Current stage                                      |
-| ------------------ | ---------------------------------------- | -------------------------------------------------- |
-| ⚡ NFOT             | Feedback timing and closed-loop learning | Observational analysis; prospective testing needed |
-| 🌊 Cavity-Flow-Lab | Incompressible Navier–Stokes simulation  | Numerical validation                               |
-| 🧠 AXIOM           | Python-powered language for computational neuroscience | Early development; LIF simulation and numerical solvers |
-| 🤖 Noggimigo       | Socratic tutoring systems                | Research and development                           |
-| 🕸️ Graphify       | Programming-language analysis            | Open-source contribution                           |
+| Project | Area | Focus |
+|---|---|---|
+| ⚡ NFOT | Computational Neuroscience | Feedback timing and temporal credit assignment |
+| 🧠 AXIOM | Scientific Programming | A programming language for computational neuroscience |
+| 🔬 RADIANT | AI Evaluation | Reasoning and evidence evaluation in AI tutoring |
+| 🤖 Noggimigo | Educational AI | Local-model-assisted Socratic tutoring |
+| 🌊 Cavity-Flow-Lab | Computational Physics | Numerical Navier–Stokes simulation |
+| 🕸️ Graphify | Software Engineering | AST-based code analysis and knowledge graphs |
 
 ---
 
 ## ⚡ Neural Feedback Optimization Theory (NFOT)
 
-**Can the variability of feedback timing help explain performance in closed-loop learning systems?**
+**Research areas:** Computational Neuroscience · Brain–Computer Interfaces · Closed-Loop Learning
 
-NFOT investigates how the timing of completed feedback relates to subsequent performance. Its central variable, the **Write-Back Gap** ($L$), is the interval between a defined starting event and the completion of feedback.
+NFOT investigates how feedback timing relates to performance in closed-loop neural and learning systems.
 
-### Preliminary findings · v5
+A central concept is the **Write-Back Gap**: the time interval between the initial stimulus onset and the completion of feedback.
 
-Analysis of public bigP3BCI data produced the following reported results:
+It is operationally measured using two timestamps:
 
-- **444 trials** across 15 participants
-- **82.9%** overall selection accuracy in the analyzed sample
-- Negative estimated within-participant association between the Write-Back Gap and selection accuracy
-- Negative estimated associations across all 15 leave-one-subject-out evaluations
-- Reported cross-validated AUC increased from **0.656 to 0.731** when a trial-level variability measure was added
+- **Stimulus onset:** the first recorded onset of a stimulus.
+- **Feedback completion:** the rising edge of `DisplayResults`, marking the completion of the feedback event.
 
-### What these results mean
+The research explores connections between temporal credit assignment, eligibility traces, neuromodulatory timing, and feedback-dependent learning.
 
-These findings are observational. They do not establish that manipulating feedback timing changes performance, and predictive improvements require further checks for leakage, model selection, uncertainty, and alternative explanations.
+### Research development
 
-**Next experiment:** Compare controlled feedback-delay distributions with different variability but matched mean delay, then test whether variability adds predictive information beyond mean timing.
+- Operationalization of the Write-Back Gap.
+- Analysis of public bigP3BCI data.
+- Participant-level statistical analysis.
+- Leave-one-subject-out evaluation.
+- Investigation of temporal variability as a potential predictive feature.
+- Provenance and reproducibility auditing.
 
-🔬 **Research pipeline:** Operational definitions → Reproducible analysis → Falsifiable predictions → Controlled experiment → Independent replication
+### Research status
 
-📄 [Preprint — Zenodo](https://zenodo.org/records/23140358)
-💻 [NFOT repository](https://github.com/Noggin-Labs/Neural-Feedback-Optimization-Theory)
+The v5 analysis produced preliminary observational findings. The current **v6** research iteration focuses on provenance, methodological scrutiny, and strengthening the evidential foundation.
 
----
+A major experimental direction is the **Paired Temporal Stability Protocol (PTSP)**.
 
-## 🧠 AXIOM — A Programming Language for Computational Neuroscience
+PTSP investigates feedback-delay distributions with matched means but different levels of variability. Its purpose is to test whether temporal variability contributes information beyond average feedback timing.
 
-**Python · Domain-specific language (DSL) · Neuron simulation · Numerical methods**
+The experiment does not assume that lower variability is inherently beneficial. That relationship remains a question to investigate.
 
-Building AXIOM, a Python-powered scientific programming language designed to make computational neuroscience models more readable, explicit, and reproducible.
+**Current priorities:**
 
-The project aims to give neuroscience workflows a clear language for defining neuron models, stimuli, simulation settings, and recorded outputs while retaining access to Python.
+- Establish reproducibility.
+- Audit data provenance and analytical decisions.
+- Test falsifiable predictions.
+- Distinguish exploratory observations from confirmatory evidence.
+- Develop controlled experimental validation.
 
-### Current implementation
+**Research links:**
 
-- Readable `.ax` domain-specific language with an interpreter and command-line interface.
-- Current-driven Leaky Integrate-and-Fire (LIF) neuron simulation.
-- Explicit Forward Euler, RK2 (Midpoint), and RK4 numerical solvers.
-- Unit-aware quantities for common neuroscience and simulation units.
-- Stimulus abstractions, simulation recording, and CSV export.
-- Tests and runnable examples to support development and validation.
-
-### Development approach
-
-AXIOM is under active development. Current capabilities are an initial foundation, not a claim that the language covers all of computational neuroscience. Priorities include readable syntax, tested numerical behavior, clear documentation, and reproducible examples.
-
-💻 **[AXIOM repository](https://github.com/AXIOM-Neuro/AXIOM)** · 📘 [Project README](https://github.com/AXIOM-Neuro/AXIOM#readme)
+- [NFOT Research Repository](https://github.com/Noggin-Labs/Neural-Feedback-Optimization-Theory)
+- [Historical Preprint — Zenodo](https://zenodo.org/records/23140358)
 
 ---
 
+## 🧠 AXIOM — Computational Neuroscience Programming Language
 
-## 🌊 Cavity-Flow-Lab — Numerical Fluid Dynamics
+**Python · C++ · Scientific Computing · Domain-Specific Languages**
 
-**Python · NumPy · Numerical PDEs · Scientific computing**
+AXIOM is a scientific programming language project designed to make computational neuroscience models explicit, readable, and reproducible.
 
-A two-dimensional incompressible Navier–Stokes solver for the lid-driven cavity problem at (Re=100).
+The project explores a Python-powered language with dedicated syntax for describing neural models, simulation parameters, stimuli, and recorded outputs.
 
-### Numerical methods
+### Implemented foundations
 
-- MAC staggered-grid discretization
-- Backward-Euler treatment of diffusion
-- Projection method for incompressibility
-- Grid refinement and benchmark comparisons
-- Comparison against reference profiles from Ghia et al.
+- `.ax` domain-specific language.
+- Interpreter and command-line interface.
+- Leaky Integrate-and-Fire neuron simulation.
+- Forward Euler, RK2, and RK4 numerical integration.
+- Unit-aware quantities.
+- Stimulus and recording abstractions.
+- CSV output.
+- Automated tests and executable examples.
 
-### Reported numerical checks
+### Development direction
 
-| Grid           | Velocity (u) RMSE | Velocity (v) RMSE |
-| -------------- | ----------------: | ----------------: |
-| (32 x 32) |           0.01122 |           0.00862 |
-| (64 x 64) |           0.00545 |           0.00339 |
+- Numerical correctness and solver validation.
+- Expanded neuron-model support.
+- Python and C++ implementation work.
+- Scientific workflow interoperability.
+- Improved simulation abstractions and documentation.
 
-The reported errors decrease with refinement. These values are useful numerical checks, not by themselves proof of convergence or full physical correctness. Further validation includes boundary conditions, pressure–velocity consistency, and systematic refinement studies.
-
-💻 [Cavity-Flow-Lab on GitHub](https://github.com/FolatheDuckofDuckingburg/Cavity-Flow-Lab)
+**Repository:** [AXIOM-Neuro/AXIOM](https://github.com/AXIOM-Neuro/AXIOM)
 
 ---
 
-## 🕸️ Graphify — Open-Source Contribution
+## 🔬 RADIANT — Reasoning and Evidence Evaluation
 
-**Python · TypeScript · Abstract syntax trees · Code analysis**
+**Artificial Intelligence · Educational Technology · Evaluation**
 
-Contributing to Graphify, an open-source knowledge-graph tool for AI-assisted codebase exploration.
+RADIANT explores the evaluation of reasoning and evidence in AI-powered tutoring systems.
 
-My work in this area includes programming-language structure and AST-based analysis, with an interest in how code relationships can be extracted without introducing false or ambiguous inferences.
+The central research interest is moving beyond answer accuracy toward examining whether a tutoring system can provide justified, evidence-supported reasoning.
 
-[**v0.9.32:**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.32) Fix: Ruby mixins declared with compact/nested syntax now resolve, and a qualified external mixin can no longer fabricate a phantom hub. `module Foo::Bar` and `module Foo; module Bar` canonicalize to the same label; `extend ActiveSupport::Concern` no longer binds to a local module named `Concern`; a genuine in-corpus `include Foo::Concern` still resolves.
+### Research directions
 
-[**v0.9.92**](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.92)**:** Fix: TypeScript `this.field` is typed from an assignment in any method, including `static` and accessors.
+- Reasoning quality evaluation.
+- Evidence-grounded explanations.
+- Answer verification.
+- Assessment of tutoring responses.
+- Reliability and consistency.
+- Evaluation frameworks for educational AI.
 
+The broader objective is to investigate how intelligent tutoring systems can be evaluated for more than their ability to produce plausible answers.
+
+**Meet our lab rat, Noggin:** [Noggin-Labs](https://github.com/Noggin-Labs)
+
+---
 
 ## 🤖 Noggimigo — Socratic Tutoring Engine
 
-**Python · Educational AI · Adaptive learning**
+**Python · Local Language Models · Educational AI**
 
-An open-source tutoring-engine project exploring how educational software can respond to a learner's reasoning and misconceptions instead of simply returning answers.
+Noggimigo is an open-source tutoring-engine project exploring reasoning-oriented educational software.
 
-### Planned and developing components
+Its architecture combines deterministic verification with optional language-model assistance.
 
-- Local intent classification
-- Structured misconception taxonomy
-- Learner-accommodation adapters
-- Accessibility considerations for learners with different cognitive and learning needs
-- Python-based architecture
+### Current development
 
-**Goal:** Explore tutoring systems that encourage independent reasoning and adapt their questions and explanations to the learner's approach.
+- Local Hugging Face model integration.
+- Structured tutoring interactions.
+- Deterministic answer verification.
+- Optional language-model-generated explanations.
+- Socratic tutoring.
+- Learner accessibility and accommodation considerations.
 
-[https://github.com/Noggin-Labs/Noggin](https://github.com/Noggin-Labs/Noggin)
-[https://github.com/Noggin-Labs/noggimigo](https://github.com/Noggin-Labs/noggimigo)
+The system explores how software can guide learners through problems without making language-model-generated answers the authority on correctness.
 
----
-
-## ⚛️ Foundations of Spacetime
-
-**Causal set theory · Discrete models · Mathematical physics**
-
-Exploring approaches to spacetime based on discrete causal structure, with particular interest in phase transitions in three-dimensional causal set models.
-
-Current work focuses on understanding existing literature, identifying assumptions, and finding a tractable direction for numerical investigation.
-
-This is an evolving research interest, not a claim to have established a new physical theory.
+**Repository:** [Noggin-Labs/Noggimigo](https://github.com/Noggin-Labs/Noggimigo)
 
 ---
 
-## 🛠️ Technical Stack
+## 🌊 Cavity-Flow-Lab — Computational Fluid Dynamics
 
-**Programming:** `Python` · `JavaScript` · `TypeScript` · `HTML` · `CSS` · `LaTeX`
+**Python · NumPy · Numerical PDEs · Computational Physics**
 
-**Scientific computing:** `NumPy` · `pandas` · `SciPy` · `Matplotlib` · `Jupyter`
+Cavity-Flow-Lab is a numerical solver for the two-dimensional incompressible Navier–Stokes equations, using the lid-driven cavity problem.
 
-**Neuroscience and data:** `MNE-Python` · `BIDS` · `EDF` · `P300 BCI` · `PhysioNet`
+### Numerical methods
 
-**Neuroscience software development:** `AXIOM` · `Python DSLs` · `LIF Models` · `Numerical ODE Solvers` · `pytest`
+- MAC staggered-grid discretization.
+- Projection method.
+- Backward-Euler diffusion treatment.
+- Grid refinement.
+- Comparison against Ghia et al. reference profiles.
 
-**Development and workflow:** `Git` · `GitHub` · `Visual Studio Code` · `Google Colab` · `AST Analysis` · `Statistical Modeling`
+### Reported numerical results
 
----
+| Grid | u RMSE | v RMSE |
+|---|---:|---:|
+| 32 × 32 | 0.01122 | 0.00862 |
+| 64 × 64 | 0.00545 | 0.00339 |
 
-## 🌱 Noggin-Labs
+The reduction in reported errors with grid refinement provides an initial numerical validation result. Further systematic convergence and physical-consistency checks remain important.
 
-**Independent research and development**
-
-Noggin-Labs brings together projects spanning:
-
-- Computational neuroscience and closed-loop neural systems
-- Adaptive educational technology (EdTech)
-- Scientific computing and numerical simulation
-- Reproducible, open-source research
-
-[Noggin-Labs on GitHub](https://github.com/Noggin-Labs)
+**Repository:** [Cavity-Flow-Lab](https://github.com/FolatheDuckofDuckingburg/Cavity-Flow-Lab)
 
 ---
 
-## 📬 Research Links
+## 🕸️ Graphify — Open-Source Software Engineering
 
-- **GitHub:** [FolatheDuckofDuckingburg](https://github.com/FolatheDuckofDuckingburg)
-- **Research organization:** [Noggin-Labs](https://github.com/Noggin-Labs)
-- **AXIOM:** [AXIOM-Neuro/AXIOM](https://github.com/AXIOM-Neuro/AXIOM)
-- **ORCID:** [0009-0007-2148-5675](https://orcid.org/0009-0007-2148-5675)
-- **NFOT preprint:** [Zenodo](https://zenodo.org/records/23140358)
-- **Contact:** [folarera.kassim@gmail.com](mailto\:folarera.kassim@gmail.com)
+**Python · TypeScript · AST Analysis · Knowledge Graphs**
+
+Contributing to Graphify, an open-source project for AI-assisted codebase exploration.
+
+My interests in this area include extracting meaningful programming-language relationships, resolving syntax variations, and preventing false connections in generated code graphs.
+
+Selected contributions include Ruby mixin-resolution improvements and TypeScript `this.field` inference improvements.
+
+**Selected links:**
+
+- [Graphify Repository](https://github.com/Graphify-Labs/graphify)
+- [Release v0.9.32](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.32)
+- [Release v0.9.92](https://github.com/Graphify-Labs/graphify/releases/tag/v0.9.92)
 
 ---
 
-##
+## ⚛️ Mathematical Physics
+
+**Causal Set Theory · String Theory · Numerical Methods · Theoretical Physics**
+
+Exploring mathematical approaches to fundamental questions in physics, with particular interests in discrete spacetime, causal set theory, and string theory.
+
+### Current interests
+
+- Discrete causal structures.
+- Mathematical foundations of spacetime.
+- Phase transitions in three-dimensional causal set models.
+- Computational approaches to theoretical models.
+- Numerical investigation of discrete systems.
+- Mathematical structures underlying physical theories.
+
+This remains an exploratory research direction grounded in studying existing literature and identifying tractable mathematical and computational questions.
+
+---
+
+## Technical Interests & Tools
+
+**Programming Languages**
+
+`Python` · `C++` · `JavaScript` · `TypeScript` · `LaTeX`
+
+**Scientific Computing**
+
+`NumPy` · `SciPy` · `pandas` · `Matplotlib` · `Jupyter` · `Google Colab`
+
+**Neuroscience**
+
+`MNE-Python` · `BIDS` · `EDF` · `P300 BCI` · `PhysioNet`
+
+**AI & Machine Learning**
+
+`Hugging Face` · `PyTorch` · `Local Language Models` · `Model Evaluation`
+
+**Development**
+
+`Git` · `GitHub` · `VS Code` · `pytest` · `Node.js` · `Next.js`
+
+---
+
+## Noggin-Labs
+
+**Independent Research & Development**
+
+Noggin-Labs is an independent research and software-development initiative focused on:
+
+- Computational neuroscience.
+- Neural feedback and closed-loop systems.
+- Brain–computer interfaces.
+- Scientific programming.
+- Adaptive educational technology.
+- Reproducible computational research.
+
+[Explore Noggin-Labs](https://github.com/Noggin-Labs)
+
+---
+
+<p align="center">
+  <a href="https://github.com/FolatheDuckofDuckingburg">
+    <img src="https://img.shields.io/badge/GitHub-FolatheDuckofDuckingburg-181717?style=for-the-badge&logo=github" alt="GitHub profile" />
+  </a>
+  <a href="https://orcid.org/0009-0007-2148-5675">
+    <img src="https://img.shields.io/badge/ORCID-0009--0007--2148--5675-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID profile" />
+  </a>
+</p>
