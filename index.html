@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Research and projects by Folarera Ayobami Kassim — computational neuroscience, neural engineering, mathematical modelling and scientific computing.">
+  <title>Folarera Ayobami Kassim — Research & Engineering</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090e1b;--panel:#10182a;--panel2:#131e33;--line:#26344d;--text:#edf3ff;--muted:#a5b2c9;--blue:#63a5ff;--cyan:#7bd9df;--gold:#f1c982;--max:1120px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 82% 0%,rgba(50,104,170,.17),transparent 34rem),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}
+    a:hover{color:var(--cyan)}
+    .wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:25px 0;border-bottom:1px solid rgba(120,150,190,.18)}
+    .wordmark{font-size:.83rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:#dce8ff}
+    nav{display:flex;gap:25px;color:var(--muted);font-size:.9rem}
+    nav a:hover{color:var(--text)}
+    .hero{padding:104px 0 88px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(230px,.6fr);gap:60px;align-items:center}
+    .eyebrow{display:inline-flex;gap:10px;align-items:center;color:var(--cyan);font-size:.78rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 16px var(--cyan)}
+    h1{font-size:clamp(2.7rem,6.5vw,5.4rem);line-height:1.02;letter-spacing:-.065em;margin:22px 0 24px;max-width:850px}
+    h1 span{color:var(--blue)}
+    .intro{max-width:670px;color:#b8c5d9;font-size:1.12rem;line-height:1.8}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
+    .button{display:inline-flex;align-items:center;gap:9px;padding:11px 17px;border-radius:8px;font-weight:700;font-size:.9rem;border:1px solid var(--line);background:rgba(255,255,255,.025)}
+    .button.primary{background:var(--blue);border-color:var(--blue);color:#071222}
+    .button:hover{transform:translateY(-2px);transition:.2s}
+    .hero-note{border:1px solid var(--line);background:linear-gradient(150deg,rgba(24,39,65,.92),rgba(12,19,34,.8));border-radius:14px;padding:25px;position:relative;overflow:hidden}
+    .hero-note:before{content:"";position:absolute;width:170px;height:170px;border:1px solid rgba(99,165,255,.25);border-radius:50%;right:-85px;top:-85px;box-shadow:0 0 0 22px rgba(99,165,255,.035),0 0 0 44px rgba(99,165,255,.025)}
+    .note-label{color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.15em;font-weight:750}
+    .note-big{font-size:1.5rem;line-height:1.25;font-weight:750;letter-spacing:-.04em;margin:15px 0}
+    .note-small{font-size:.9rem;color:var(--muted)}
+    section{padding:62px 0;border-top:1px solid rgba(120,150,190,.16)}
+    .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:27px}
+    .kicker{font-size:.72rem;color:var(--blue);letter-spacing:.17em;text-transform:uppercase;font-weight:800}
+    h2{font-size:clamp(1.8rem,3.5vw,2.5rem);letter-spacing:-.045em;line-height:1.15;margin:8px 0 0}
+    .section-desc{max-width:470px;color:var(--muted);font-size:.94rem;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+    .card{padding:24px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(145deg,rgba(19,30,51,.88),rgba(13,20,35,.88));min-height:205px;display:flex;flex-direction:column}
+    .card-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .tag{font-size:.7rem;color:var(--cyan);letter-spacing:.1em;text-transform:uppercase;font-weight:750}
+    .arrow{color:var(--blue);font-size:1.1rem}
+    h3{font-size:1.2rem;letter-spacing:-.025em;margin:18px 0 8px}
+    .card p{color:var(--muted);font-size:.92rem;margin:0 0 18px}
+    .card-link{font-size:.82rem;color:#c5d7f4;font-weight:700;margin-top:auto}
+    .focus-list{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .focus{border:1px solid var(--line);border-radius:9px;padding:16px;background:rgba(16,24,42,.6);font-size:.9rem;color:#cbd7e9}
+    .focus b{display:block;color:var(--text);font-size:.96rem;margin-bottom:4px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:45px}
+    .about p{color:var(--muted);margin:0 0 14px}
+    .principle{border-left:2px solid var(--blue);padding:4px 0 4px 20px;color:#d7e5fa;font-size:1.12rem;line-height:1.65}
+    .footer{padding:30px 0 45px;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:18px;border-top:1px solid rgba(120,150,190,.16)}
+    .footer a{color:#cbdcf5}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:75px 0 60px;gap:32px}.hero-note{max-width:460px}.section-head{display:block}.section-desc{margin-top:13px}.focus-list{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:20px}nav{gap:13px;font-size:.8rem}}
+    @media(max-width:520px){.wrap{width:min(var(--max),calc(100% - 30px))}.topbar{align-items:flex-start;gap:16px;flex-direction:column}.hero{padding-top:58px}.grid{grid-template-columns:1fr}.focus-list{grid-template-columns:1fr 1fr}.footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="wordmark" href="#home">FAK / Research</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a><a href="#interests">Interests</a><a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <div class="hero">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Independent student researcher</div>
+          <h1>Understanding the brain.<br><span>Building what comes next.</span></h1>
+          <p class="intro">I explore computational neuroscience, neural engineering, mathematical modelling and scientific computing — connecting mathematical ideas to systems that learn, adapt and interact with the world.</p>
+          <div class="actions">
+            <a class="button primary" href="#work">Explore selected work <span aria-hidden="true">↗</span></a>
+            <a class="button" href="https://github.com/FolatheDuckofDuckingburg">GitHub profile ↗</a>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Research direction">
+          <div class="note-label">Research direction</div>
+          <div class="note-big">From neural feedback to adaptive systems.</div>
+          <p class="note-small">A developing research portfolio across theory, simulation, software and learning technology.</p>
+        </aside>
+      </div>
+
+      <section id="work">
+        <div class="section-head">
+          <div><div class="kicker">01 / Selected work</div><h2>Projects & research</h2></div>
+          <p class="section-desc">A selection of research directions and engineering projects. Each project is a work in progress unless its repository says otherwise.</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="card-top"><span class="tag">Research · Neural engineering</span><span class="arrow">↗</span></div>
+            <h3>Neural Feedback Optimization Theory</h3>
+            <p>Investigating the timing between stimulus onset and feedback in closed-loop neural systems, with an emphasis on operational definitions, data provenance and validation.</p>
+            <a class="card-link" href="https://github.com/Noggin-Labs/Neural-Feedback-Optimization-Theory" target="_blank" rel="noreferrer">Explore the research repository ↗</a>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="tag">EdTech · Adaptive learning</span><span class="arrow">↗</span></div>
+            <h3>Noggin</h3>
+            <p>An adaptive learning platform designed with neurodivergent learners in mind, combining thoughtful learning experiences with accessible interface design.</p>
+            <a class="card-link" href="https://github.com/Noggin-Labs/Noggin" target="_blank" rel="noreferrer">Explore Noggin on GitHub ↗</a>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="tag">Scientific software</span><span class="arrow">↗</span></div>
+            <h3>AXIOM-Neuro</h3>
+            <p>A scientific-computing project exploring computational tools and models for neuroscience.</p>
+            <a class="card-link" href="https://github.com/Noggin-Labs" target="_blank" rel="noreferrer">Browse the Noggin Labs organisation ↗</a>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="tag">Computational physics</span><span class="arrow">↗</span></div>
+            <h3>Cavity-Flow-Lab</h3>
+            <p>A numerical fluid-dynamics project focused on modelling lid-driven cavity flow and checking simulation behaviour against reference solutions.</p>
+            <a class="card-link" href="https://zenodo.org/records/23285274" target="_blank" rel="noreferrer">View the Zenodo record ↗</a>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="tag">AI · Learning science</span><span class="arrow">↗</span></div>
+            <h3>RADIANT</h3>
+            <p>An evaluation-oriented project exploring how AI tutoring systems can make reasoning and evidence more inspectable.</p>
+            <a class="card-link" href="https://github.com/Noggin-Labs" target="_blank" rel="noreferrer">Browse related work ↗</a>
+          </article>
+          <article class="card">
+            <div class="card-top"><span class="tag">Learning tools · Open source</span><span class="arrow">↗</span></div>
+            <h3>Noggimigo</h3>
+            <p>A learning companion built around structured tutoring, deterministic verification and supportive explanations.</p>
+            <a class="card-link" href="https://huggingface.co/Noggin-Labs/Noggimigo" target="_blank" rel="noreferrer">Explore Noggimigo ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="interests">
+        <div class="section-head">
+          <div><div class="kicker">02 / Research interests</div><h2>Questions that keep me curious</h2></div>
+          <p class="section-desc">The work sits at the intersections of mathematics, computation, neuroscience and human-centred technology.</p>
+        </div>
+        <div class="focus-list">
+          <div class="focus"><b>Computational neuroscience</b>Neural models & dynamics</div>
+          <div class="focus"><b>Neural engineering</b>BCI & closed-loop systems</div>
+          <div class="focus"><b>Mathematical physics</b>Modelling & simulation</div>
+          <div class="focus"><b>Scientific computing</b>Reproducible code & analysis</div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-head">
+          <div><div class="kicker">03 / About</div><h2>Research-minded. Evidence-led.</h2></div>
+        </div>
+        <div class="about">
+          <div>
+            <p>I'm Folarera Ayobami Kassim, a student researcher interested in understanding complex systems and turning rigorous ideas into useful computational tools.</p>
+            <p>My work is exploratory and iterative. I care about clear definitions, traceable data, honest limitations and distinguishing demonstrated results from hypotheses that still need testing.</p>
+          </div>
+          <div class="principle">“A promising idea is a starting point. Evidence is what earns the conclusion.”</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year">2026</span> Folarera Ayobami Kassim</span>
+      <span><a href="https://github.com/FolatheDuckofDuckingburg">GitHub</a> · Built with HTML & CSS</span>
+    </footer>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
